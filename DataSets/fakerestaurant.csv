@@ -1,0 +1,13 @@
+Alternativo;Bar;Sex/Sab;fome;Cliente;Preço;Chuva;Res;Tipo;Tempo;conc
+Não;Não;Não;Sim;Alguns;RRR;Sim;Sim;Francês;0-10;Não
+Não;Não;Não;Sim;Cheio;R;Não;Não;Tailandês;30-60;Sim
+Não;Sim;Não;Não;Alguns;R;Não;Sim;Hamburger;0-10;Não
+Sim;Não;Sim;Sim;Cheio;R;Sim;Não;Tailandês;out/30;Não
+Sim;Não;Sim;Não;Cheio;RRR;Não;Sim;Francês;>60;Sim
+Não;Sim;Não;Sim;Alguns;RR;Sim;Sim;Italiano;0-10;Não
+Não;Sim;Sim;Não;Nenhum;R;Sim;Não;Hamburger;0-10;Não
+Não;Não;Sim;Sim;Alguns;RR;Sim;Sim;Tailandês;0-10;Não
+Não;Sim;Sim;Sim;Cheio;R;Não;Sim;Hamburger;>60;Sim
+Sim;Sim;Sim;Sim;Cheio;RRR;Não;Não;Italiano;out/30;Sim
+Não;Não;Não;Não;Nenhum;R;Não;Não;Tailandês;0-10;Sim
+Sim;Sim;Sim;Sim;Cheio;R;Não;Não;Hamburger;30-60;Não
