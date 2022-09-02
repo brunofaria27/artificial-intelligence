@@ -57,16 +57,16 @@ Image(filename='tree_restaurant.png')
 
 # Gerar e mostrar matriz de confusão
 conf_matrix = confusion_matrix(dataset_teste_class, tree_restaurant.predict(dataset_teste))
-labels = ["Vai esperar", "Não vai esperar"]
-cmd = ConfusionMatrixDisplay(conf_matrix, display_labels=labels)
+cmd = ConfusionMatrixDisplay(conf_matrix, display_labels=dataset_teste_class.values)
 cmd.plot(values_format="d")
 plt.show()
 
 # Mostrar métricas
 print("Accuracy score = ", accuracy_score(dataset_teste_class, tree_restaurant.predict(dataset_teste)))
 print('\n')
-print(classification_report(dataset_teste_class, tree_restaurant.predict(dataset_teste), target_names=labels))
+print(classification_report(dataset_teste_class, tree_restaurant.predict(dataset_teste)))
 print('\n')
+
 tn, fp, fn, tp = confusion_matrix(dataset_teste_class, tree_restaurant.predict(dataset_teste)).ravel()
 tnr = tn / (tn + fp) # true negative rate 
 fpr = fp / (tn + fp) # false positive rate 
