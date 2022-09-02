@@ -37,11 +37,9 @@ treinamento_dados['fome'] = labelencoder.fit_transform(treinamento_dados['fome']
 treinamento_dados['Chuva'] = labelencoder.fit_transform(treinamento_dados['Chuva'])
 treinamento_dados['Res'] = labelencoder.fit_transform(treinamento_dados['Res'])
 
-# Separar tabelas necessárias
-dataset_teste = treinamento_dados.loc[8:]
-dataset_teste_class = treinamento_classification.loc[8:]
-dataset_treino = treinamento_dados.loc[0:7]
-dataset_treino_class = treinamento_classification.loc[0:7]
+# Separar dados de treinamento e de testes
+from sklearn.model_selection import train_test_split
+dataset_treino, dataset_teste, dataset_treino_class, dataset_teste_class = train_test_split(treinamento_dados, treinamento_classification, test_size=0.20, random_state=0)
 
 # Criando a árvore e definindo o criterio de criação usando entropia
 tree_restaurant = DecisionTreeClassifier(criterion="entropy")

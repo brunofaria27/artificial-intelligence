@@ -32,11 +32,9 @@ treinamento_dados = pd.get_dummies(data_treino, columns=['outlook', 'temperature
 labelencoder =  preprocessing.LabelEncoder()
 treinamento_dados['windy'] = labelencoder.fit_transform(treinamento_dados['windy'])
 
-# Fazer Slice nas tabelas de forma a separar treino e teste
-dataset_teste = treinamento_dados.loc[10:]
-dataset_teste_class = treinamento_classification.loc[10:]
-dataset_treino = treinamento_dados.loc[0:9]
-dataset_treino_class = treinamento_classification.loc[0:9]
+# Separar dados de treinamento e de testes
+from sklearn.model_selection import train_test_split
+dataset_treino, dataset_teste, dataset_treino_class, dataset_teste_class = train_test_split(treinamento_dados, treinamento_classification, test_size=0.20, random_state=0)
 
 # Criando a árvore e definindo o criterio de criação usando entropia
 tree_weather = DecisionTreeClassifier(criterion="entropy")
