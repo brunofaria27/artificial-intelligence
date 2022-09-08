@@ -20,7 +20,7 @@ import pydot
 import pydotplus
 import seaborn as sns
 
-from imblearn.over_sampling import SMOTE # Oversampling
+from imblearn.over_sampling import RandomOverSampler
 from imblearn.under_sampling import RandomUnderSampler # Undersampling
 
 # Ler dados do DataSet
@@ -45,7 +45,7 @@ treinamento_dados['node-caps'] = labelencoder.fit_transform(treinamento_dados['n
 dataset_treino, dataset_teste, dataset_treino_class, dataset_teste_class = train_test_split(treinamento_dados, treinamento_classification, test_size=0.20, random_state=0)
 
 # Tratar dataset desbalanceado
-smote = SMOTE(random_state=0)
+smote = RandomOverSampler()
 # smote = RandomUnderSampler(random_state=0)
 dataset_treino, dataset_treino_class = smote.fit_resample(dataset_treino, dataset_treino_class)
 dataset_teste, dataset_teste_class = smote.fit_resample(dataset_teste, dataset_teste_class)
