@@ -15,3 +15,5 @@
 -------------------------------
 - TODO:
     - Olhar transformação com a professora se está correto o jeito de transformar usando label encoder os dados: 'age', 'tumor-size', 'inv-nodes'.
+    - RandomOverSampling para SMOTE
+    - Númerico -> Média / Nominal -> Moda
