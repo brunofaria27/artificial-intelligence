@@ -12,6 +12,8 @@
     - [Árvore de decisão comparada com Naive Bayes e Random Forest - Cancer Dataset](https://github.com/brunofaria27/artificial-intelligence/blob/main/Decision%20Tree/Naive%20Bayes%20%26%20Random%20Forest%20-%20Difference/DecisionTreeAndNaiveCancer.ipynb)
     - [Árvore de decisão comparada com Naive Bayes e Random Forest - Labor Dataset](https://github.com/brunofaria27/artificial-intelligence/blob/main/Decision%20Tree/Naive%20Bayes%20%26%20Random%20Forest%20-%20Difference/DecisionTreeAndNaiveLabor.ipynb)
 
+- [Apriori]()
+
 -------------------------------
 - TODO:
     - Olhar transformação com a professora se está correto o jeito de transformar usando label encoder os dados: 'age', 'tumor-size', 'inv-nodes'.
